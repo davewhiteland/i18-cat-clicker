@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 id="top">
+  {{ greeting }}
+  <br>
+  {{ cat_action }}
+</h1>
+
+<form action="cats#top" method="post" class="cats">
+  <input name="name" type="hidden" value="{{name}}"/>
+  <div>
+    <input type="checkbox" name="cat-1" id="cat-1"/>
+    <label for="cat-1"><img src="static/img/thiscatdoesnotexist-1.jpg" /></label>
+  </div>
+  <div>
+    <input type="checkbox" name="cat-2" id="cat-2"/>
+    <label for="cat-2"><img src="static/img/thiscatdoesnotexist-2.jpg" /></label>
+  </div>
+  <div>
+    <input type="checkbox" name="cat-3" id="cat-3"/>
+    <label for="cat-3"><img src="static/img/thiscatdoesnotexist-3.jpg" /></label>
+  </div>
+  <div>
+    <input type="checkbox" name="cat-4" id="cat-4"/>
+    <label for="cat-4"><img src="static/img/thiscatdoesnotexist-4.jpg" /></label>
+  </div>
+  <div>
+    <input type="checkbox" name="cat-5" id="cat-5"/>
+    <label for="cat-5"><img src="static/img/thiscatdoesnotexist-5.jpg" /></label>
+  </div>
+  <div>
+    <input type="checkbox" name="cat-6" id="cat-6"/>
+    <label for="cat-6"><img src="static/img/thiscatdoesnotexist-6.jpg" /></label>
+  </div>
+  <div>
+    <input type="checkbox" name="cat-7" id="cat-7"/>
+    <label for="cat-7"><img src="static/img/thiscatdoesnotexist-7.jpg" /></label>
+  </div>
+  <div>
+    <input type="checkbox" name="cat-8" id="cat-8"/>
+    <label for="cat-8"><img src="static/img/thiscatdoesnotexist-8.jpg" /></label>
+  </div>
+  <div>
+    <input type="checkbox" name="cat-9" id="cat-9"/>
+    <label for="cat-9"><img src="static/img/thiscatdoesnotexist-9.jpg" /></label>
+  </div>
+  <div>
+    <input type="checkbox" name="cat-10" id="cat-10"/>
+    <label for="cat-10"><img src="static/img/thiscatdoesnotexist-10.jpg" /></label>
+  </div>
+  <div>
+    <input type="checkbox" name="cat-11" id="cat-11"/>
+    <label for="cat-11"><img src="static/img/thiscatdoesnotexist-11.jpg" /></label>
+  </div>
+  <div class="submit"><input type="submit" value="meow" /></div>
+</form>
+
+{% endblock %}

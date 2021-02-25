@@ -1,0 +1,111 @@
+body {
+  background:#eeeeff;
+  font-size: large;
+  font-family: sans-serif;
+  margin: 1em;
+  background: #ccc;
+  font-size:2em;
+  text-align:center;
+}
+nav {
+  text-align:right;
+}
+nav ul {
+  list-style: none;
+  font-size:50%;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  background: #888;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 0.33em;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+nav ul li a:hover {
+  background-color: #666;
+}
+
+.content {
+  margin: 0em auto 2em auto;
+  max-width:40em;
+  background:white;
+  padding:1em 2em;
+  color:black;
+}
+h1 {
+  text-align: center;
+}
+form {
+  border:1px solid green;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 0.5em;
+  background-color: #ddffdd;
+  grid-gap:0.2em;
+}
+label {
+  display:block;
+  width: 100%;
+  font-size:1em;
+  padding:1em;
+}
+input[type=text] {
+  width: 100%;
+  padding:1em;
+  font-size:1em;
+}
+input[type=submit] {
+  background: #696;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 0.33em;
+  text-decoration: none;
+  transition: background-color 0.5s;
+  padding:1em;
+  font-size:1em;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background: #262;
+}
+img {
+  width:100%;
+}
+form.cats{
+  background:white;
+  grid-template-columns: repeat(6, 1fr);
+}
+form.cats label {
+  cursor: pointer;
+  padding: 0;
+  margin:0;
+}
+form.cats label img {
+  opacity: 0.25;
+  transition: opacity 0.5s, transform 0.5s;
+}
+form.cats label:hover img {
+  opacity:0.5;
+}
+form.cats input[type=checkbox]{
+  display: none;
+}
+form.cats input[type=checkbox]:checked ~ label img{
+  opacity:1;
+  box-shadow:0.25em 0.25em 0.5em rgba(0,0,0,0.333);
+  transform:translate(-0.2em, -0.2em);
+}
+.about {
+  margin: 1em auto;
+  line-height: 1.6em;
+  max-width:20em;
+  text-align: left;
+}
+code {
+  font-size:2.5ex;
+}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h1> {{ greeting }} </h1>
+  
+  <form action="" method="post">
+    <div><label for="name">{{ name_label }}</label></div>
+    <div><input type="text" id="name" name="name"/></div>
+    <div><input type="submit" id="submit" value="{{ button_text }}" /></div>
+  </form>
+
+{% endblock %}
