@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-25 08:32+0000\n"
-"PO-Revision-Date: 2021-02-25 08:33+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2021-02-25 15:31+0000\n"
+"PO-Revision-Date: 2021-02-25 15:40+0000\n"
+"Last-Translator: \n"
 "Language: de\n"
 "Language-Team: de <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -18,43 +18,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: app.py:14
-msgid "Good "
-msgstr ""
-
 #: app.py:17
-msgid "morning"
-msgstr ""
+msgid "Good morning."
+msgstr "Guten Morgen."
 
 #: app.py:19
-msgid "afternoon"
-msgstr ""
+#, python-format
+msgid "Good morning, %(name)s. "
+msgstr "Guten Morgen %(name)s."
 
-#: app.py:26
+#: app.py:22
+msgid "Good afternoon."
+msgstr "Guten Nachmittag."
+
+#: app.py:24
+#, python-format
+msgid "Good afternoon, %(name)s. "
+msgstr "Guten Nachmittag, %(name)s."
+
+#: app.py:30
 msgid "Hello world."
-msgstr ""
-
-#: app.py:43
-msgid "Hello"
-msgstr ""
+msgstr "Hallo Welt."
 
 #: app.py:44
+msgid "Hello"
+msgstr "Hallo."
+
+#: app.py:46
 msgid "submit"
-msgstr ""
+msgstr "einreichen"
 
-#: app.py:45
+#: app.py:47
 msgid "Your name:"
-msgstr ""
+msgstr "Dein Name:"
 
-#: app.py:57
-msgid "You clicked on"
-msgstr ""
+#: app.py:54
+#, python-format
+msgid "You clicked on %(num)s cat."
+msgid_plural "You clicked on %(num)s cats."
+msgstr[0] "Sie haben auf %(num)s Katze geklickt"
+msgstr[1] "Sie haben auf %(num)s Katzen geklickt."
 
-#: app.py:57
-msgid "cats."
-msgstr ""
-
-#: app.py:63
+#: app.py:62
 msgid "meow"
 msgstr ""
 
