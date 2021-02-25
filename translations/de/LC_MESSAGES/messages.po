@@ -1,0 +1,60 @@
+# German translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-02-25 08:32+0000\n"
+"PO-Revision-Date: 2021-02-25 08:33+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: app.py:14
+msgid "Good "
+msgstr ""
+
+#: app.py:17
+msgid "morning"
+msgstr ""
+
+#: app.py:19
+msgid "afternoon"
+msgstr ""
+
+#: app.py:26
+msgid "Hello world."
+msgstr ""
+
+#: app.py:43
+msgid "Hello"
+msgstr ""
+
+#: app.py:44
+msgid "submit"
+msgstr ""
+
+#: app.py:45
+msgid "Your name:"
+msgstr ""
+
+#: app.py:57
+msgid "You clicked on"
+msgstr ""
+
+#: app.py:57
+msgid "cats."
+msgstr ""
+
+#: app.py:63
+msgid "meow"
+msgstr ""
+
