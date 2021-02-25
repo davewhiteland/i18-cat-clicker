@@ -46,15 +46,21 @@ def name():
     )
   elif request.method == 'POST':
     name = request.form['name']
-    # qty_cats = str(sum ( bool(x) for x in [ i.startswith("cat") for i in request.form]))
-    qty_cats = str( len([s for s in request.form if s.startswith('cat')]) )
+    qty_cats = len([s for s in request.form if s.startswith('cat')])
 
     greeting = get_greeting()
     if name:
       greeting += ", " + name
     greeting += "."
     
-    cat_action = " ".join([gettext("You clicked on"), qty_cats, gettext("cats.")])
+    plural_s = "s" 
+    if qty_cats == 1:
+      plural_s = ""
+    else:
+      plural_s = "s"
+
+    cat_action = " ".join([gettext("You clicked on"), str(qty_cats), 
+      gettext("cat") + plural_s + "."])
 
     return render_template('cats.html',
       greeting=greeting,
