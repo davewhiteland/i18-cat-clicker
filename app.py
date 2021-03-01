@@ -18,7 +18,6 @@ def get_locale():
     language_code = request.accept_languages.best_match(['de', 'en'])
   if language_code is None:
     language_code = 'en'
-  print("FIXME get_locale: " + language_code)
   return language_code
 
 def get_greeting(name=None):
