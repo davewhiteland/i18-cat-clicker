@@ -8,8 +8,10 @@ body {
   text-align:center;
 }
 nav {
+  margin:0 auto;
+  max-width:40em;
   display: grid;
-  grid-template-columns: [col] 1fr [col] 3fr
+  grid-template-columns: [col] 2fr [col] 3fr
 }
 nav ul {
   text-align:right;
