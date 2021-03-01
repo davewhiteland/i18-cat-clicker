@@ -1,1 +1,1 @@
-web: gunicorn run:app
+web: gunicorn i18-cat-clicker:app
