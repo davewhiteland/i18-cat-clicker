@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-25 15:31+0000\n"
+"POT-Creation-Date: 2021-02-28 20:54+0000\n"
 "PO-Revision-Date: 2021-02-25 15:40+0000\n"
 "Last-Translator: \n"
 "Language: de\n"
@@ -18,48 +18,68 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: app.py:17
+#: app.py:28
 msgid "Good morning."
 msgstr "Guten Morgen."
 
-#: app.py:19
+#: app.py:30
 #, python-format
 msgid "Good morning, %(name)s. "
 msgstr "Guten Morgen %(name)s."
 
-#: app.py:22
+#: app.py:33
 msgid "Good afternoon."
 msgstr "Guten Nachmittag."
 
-#: app.py:24
+#: app.py:35
 #, python-format
 msgid "Good afternoon, %(name)s. "
 msgstr "Guten Nachmittag, %(name)s."
 
-#: app.py:30
+#: app.py:41
 msgid "Hello world."
 msgstr "Hallo Welt."
 
-#: app.py:44
+#: app.py:55
 msgid "Hello"
 msgstr "Hallo."
 
-#: app.py:46
+#: app.py:57
 msgid "submit"
 msgstr "einreichen"
 
-#: app.py:47
+#: app.py:58
 msgid "Your name:"
 msgstr "Dein Name:"
 
-#: app.py:54
+#: app.py:65
 #, python-format
 msgid "You clicked on %(num)s cat."
 msgid_plural "You clicked on %(num)s cats."
 msgstr[0] "Sie haben auf %(num)s Katze geklickt"
 msgstr[1] "Sie haben auf %(num)s Katzen geklickt."
 
-#: app.py:62
+#: app.py:73
 msgid "meow"
+msgstr "Miau"
+
+#: app.py:84
+msgid "Your current language is English."
 msgstr ""
+
+#: app.py:87
+msgid "Your current language is German."
+msgstr "Ihre aktuelle Sprache ist Deutsch"
+
+#: templates/base.html:15
+msgid "greeting"
+msgstr "Gruß"
+
+#: templates/base.html:16
+msgid "name"
+msgstr "Name"
+
+#: templates/base.html:17
+msgid "about"
+msgstr "Info"
 

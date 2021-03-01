@@ -8,11 +8,14 @@ body {
   text-align:center;
 }
 nav {
-  text-align:right;
+  display: grid;
+  grid-template-columns: [col] 1fr [col] 3fr
 }
 nav ul {
+  text-align:right;
   list-style: none;
   font-size:50%;
+  margin:0 0 1em 0;
 }
 nav ul li {
   display: inline-block;
@@ -28,7 +31,14 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #666;
 }
-
+nav ul.language {
+  text-align:left;
+}
+nav ul li a.current {
+  background-color:white;
+  color:black;
+  
+}
 .content {
   margin: 0em auto 2em auto;
   max-width:40em;

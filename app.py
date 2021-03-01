@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, make_response, url_for
 from flask_babel import Babel, gettext, ngettext
 from flask_babel import gettext as _
 from datetime import datetime
@@ -9,6 +9,17 @@ app.config.from_pyfile('config.cfg')
 babel = Babel(app)
 
 MIDDAY = 12
+LANG_COOKIE = 'lang'
+
+@babel.localeselector
+def get_locale():
+  language_code = request.cookies.get(LANG_COOKIE)
+  if language_code is None:
+    language_code = request.accept_languages.best_match(['de', 'en'])
+  if language_code is None:
+    language_code = 'en'
+  print("FIXME get_locale: " + language_code)
+  return language_code
 
 def get_greeting(name=None):
   hour_now = datetime.now().time().hour
@@ -66,6 +77,19 @@ def name():
 @app.route('/about')
 def about():
   return render_template('about.html')
+
+
+@app.route('/lang')
+def lang():
+  language_code = request.args.get('lang')
+  if language_code == 'de':
+    message = gettext("Your current language is German.")
+  elif language_code == 'en':
+    message = gettext("Your current language is English.")
+  response = make_response(redirect(url_for('index')))
+  if language_code is not None:
+    response.set_cookie(LANG_COOKIE, language_code)
+  return response
 
 if __name__ == "__main__":
     app.run()
