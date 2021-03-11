@@ -1,0 +1,84 @@
+# Translations template for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-03-11 21:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: app.py:27
+msgid "Good morning."
+msgstr ""
+
+#: app.py:29
+#, python-format
+msgid "Good morning, %(name)s. "
+msgstr ""
+
+#: app.py:32
+msgid "Good afternoon."
+msgstr ""
+
+#: app.py:34
+#, python-format
+msgid "Good afternoon, %(name)s. "
+msgstr ""
+
+#: app.py:40
+msgid "Hello world."
+msgstr ""
+
+#: app.py:54
+msgid "Hello"
+msgstr ""
+
+#: app.py:56
+msgid "submit"
+msgstr ""
+
+#: app.py:57
+msgid "Your name:"
+msgstr ""
+
+#: app.py:64
+#, python-format
+msgid "You clicked on %(num)s cat."
+msgid_plural "You clicked on %(num)s cats."
+msgstr[0] ""
+msgstr[1] ""
+
+#: app.py:72
+msgid "meow"
+msgstr ""
+
+#: app.py:85
+msgid "Your current language is German."
+msgstr ""
+
+#: app.py:87
+msgid "Your current language is English."
+msgstr ""
+
+#: templates/base.html:15
+msgid "greeting"
+msgstr ""
+
+#: templates/base.html:16
+msgid "name"
+msgstr ""
+
+#: templates/base.html:17
+msgid "about"
+msgstr ""
+
