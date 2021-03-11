@@ -28,21 +28,23 @@ Kill flask on the command line with Crtl-C.
 
 ### Extract strings
 
-    pybabel extract -F babel.cfg -o messages.pot .
+    pybabel extract -F babel.cfg -o cat-clicker.pot .
 
 This will use the mapping from the babel.cfg file and store the generated
-template in `messages.pot`.
+template in `cat-clicker.pot`.
 
 
 ### Generate the translation file
 
 Pick your language: here `de` for German:
 
-    pybabel init -i messages.pot -d translations -l de
+    pybabel init -i cat-clicker.pot -d translations -l de
 
 `-d translations` tells pybabel to store the translations in this folder. This
-is where Flask-Babel will look for translations. 
+is where Flask-Babel will look for translations. Output will be:
 
+    creating catalog translations/de/LC_MESSAGES/messages.po based on cat-clicker.pot
+  
 ### Translate the words
 
 Now edit the `translations/de/LC_MESSAGES/messages.po` file as needed.
@@ -55,7 +57,7 @@ First time (new file):
 
 Subsequently (updating translations):
 
-    pybabel update -i messages.pot -d translations
+    pybabel update -i cat-clicker.pot -d translations
 
 That creates `messages.mo` in the `translations/de` directory.
 
@@ -81,4 +83,4 @@ _Detail for later_:
 If you are using the lazy_gettext() function you should tell pybabel that it
 should also look for such function calls:
 
-    pybabel extract -F babel.cfg -k lazy_gettext -o messages.pot .
+    pybabel extract -F babel.cfg -k lazy_gettext -o cat-clicker.pot .
