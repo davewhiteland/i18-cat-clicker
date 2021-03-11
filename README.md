@@ -67,17 +67,11 @@ any fuzzy strings the first time you run this._
 
 ### Run with translation
 
-See if that worked: change Flask default language to German:
+See if that worked: you should be able to switch to German by clicking on DE on
+in the website (because that stores it in your session (cookie)).
 
-Edit `config.cfg` to 
-
-    BABEL_DEFAULT_LOCALE = 'de'
-
-Now start the app up again:
-
-    flask run
-
-then hit [localhost:5000](http://localhost:5000) again and you'll see a translated German site.
+Alternatively, if you want to force it, you can change the default language to German
+in `get_locale` inside `app.py`.
 
 
 ### More detail when extracting
